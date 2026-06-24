@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piku Birthday Project</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Trebuchet MS',sans-serif;
+}
+
+body{
+background:#FFF8F0;
+color:#556052;
+overflow-x:hidden;
+}
+
+.section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px;
+text-align:center;
+}
+
+.hero{
+background:linear-gradient(180deg,#FFF8F0,#F5EBDD);
+}
+
+h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+h2{
+font-size:2rem;
+margin-bottom:15px;
+}
+
+p{
+max-width:700px;
+line-height:1.8;
+font-size:1.1rem;
+}
+
+.card{
+background:white;
+padding:25px;
+margin:15px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+width:300px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+margin-top:25px;
+padding:15px 30px;
+border:none;
+border-radius:30px;
+background:#A8B8A0;
+color:white;
+font-size:1rem;
+cursor:pointer;
+}
+
+.btn:hover{
+opacity:.9;
+}
+
+#countdown{
+font-size:2rem;
+margin-top:20px;
+font-weight:bold;
+}
+
+.star{
+position:fixed;
+width:4px;
+height:4px;
+background:#A8B8A0;
+border-radius:50%;
+animation:float 8s linear infinite;
+opacity:.6;
+}
+
+@keyframes float{
+from{
+transform:translateY(100vh);
+}
+to{
+transform:translateY(-100px);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero section">
+
+<h1>⚠️ Official Notice</h1>
+
+<p>
+A very important human is about to get older.
+After careful observation, investigation,
+and way too many conversations...
+we are ready to celebrate him.
+</p>
+
+<div id="countdown"></div>
+
+<button class="btn"
+onclick="document.getElementById('page2').scrollIntoView({behavior:'smooth'})">
+Begin Investigation 🔍
+</button>
+
+</div>
+
+<div class="section" id="page2">
+
+<h2>Subject Profile 📋</h2>
+
+<div class="card">
+<h3>Piku</h3>
+<p>
+Species: Human (allegedly)<br>
+Future Businessman 💼<br>
+Certified Pookie ✅<br>
+Status: Under Investigation 🔍
+</p>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Things I Learned 🌿</h2>
+
+<div class="cards">
+
+<div class="card">
+❤️ Caring
+</div>
+
+<div class="card">
+😂 Funny
+</div>
+
+<div class="card">
+🌙 Supportive
+</div>
+
+<div class="card">
+💼 Business Minded
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Piku Starter Pack 😭</h2>
+
+<div class="card">
+✔ Business Ideas<br><br>
+✔ Random Humor<br><br>
+✔ Good Advice<br><br>
+✔ Emotional Support<br><br>
+✔ Mysterious Creature
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Future Predictions 🔮</h2>
+
+<div class="card">
+2027 ➜ More mature<br><br>
+2030 ➜ Business Owner<br><br>
+2035 ➜ Still getting teased<br><br>
+2050 ➜ Still denying he's cute
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Reserved For Future Photos 📸</h2>
+
+<div class="card">
+Photo #1 goes here
+</div>
+
+<div class="card">
+Photo #2 goes here
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Final Message 🤍</h2>
+
+<p>
+I don't know what next year looks like.
+I don't know where life will take us.
+But today exists.
+And today,
+I wanted to celebrate you.
+<br><br>
+Happy Birthday, Piku 🌿
+</p>
+
+</div>
+
+<script>
+
+const birthday = new Date("June 26, 2026 00:00:00").getTime();
+
+setInterval(function(){
+
+const now = new Date().getTime();
+
+const distance = birthday - now;
+
+const days = Math.floor(distance/(1000*60*60*24));
+const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+const seconds = Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("countdown").innerHTML=
+days+"d "+hours+"h "+minutes+"m "+seconds+"s";
+
+},1000);
+
+
+for(let i=0;i<40;i++){
+
+let star=document.createElement("div");
+
+star.classList.add("star");
+
+star.style.left=Math.random()*100+"vw";
+
+star.style.animationDuration=
+(5+Math.random()*8)+"s";
+
+document.body.appendChild(star);
+
+}
+
+</script>
+
+</body>
+</html>
