@@ -14,8 +14,13 @@ font-family:'Trebuchet MS',sans-serif;
 }
 
 body{
-background:#FFF8F0;
-color:#556052;
+background:linear-gradient(
+180deg,
+#F8FBFF 0%,
+#EEF5FF 40%,
+#FFF8F0 100%
+);
+color:#4F5A52;
 overflow-x:hidden;
 }
 
@@ -30,25 +35,29 @@ text-align:center;
 }
 
 .hero{
-background:linear-gradient(180deg,#FFF8F0,#F5EBDD);
+background:linear-gradient(
+180deg,
+#F8FBFF,
+#EEF5FF,
+#FFF8F0
+);
 }
-
+  
 h1{
-font-size:3rem;
-margin-bottom:20px;
-}
-
-h2{
-font-size:2rem;
+font-size:2.4rem;
 margin-bottom:15px;
+}
+  
+h2{
+font-size:1.6rem;
 }
 
 p{
-max-width:700px;
-line-height:1.8;
-font-size:1.1rem;
+font-size:0.95rem;
+line-height:1.9;
+max-width:650px;
 }
-
+  
 .card{
 background:white;
 padding:25px;
@@ -74,16 +83,19 @@ margin-top:25px;
 padding:15px 30px;
 border:none;
 border-radius:30px;
-background:
-linear-gradient(
-180deg,
-#FFF8F0,
-#F4EFE7,
-#E6F0E4
+
+background:linear-gradient(
+135deg,
+#1E3A5F,
+#27496D
 );
+
 color:white;
 font-size:1rem;
+font-weight:600;
 cursor:pointer;
+
+box-shadow:0 4px 15px rgba(30,58,95,0.25);
 }
 
 .btn:hover{
@@ -91,9 +103,10 @@ opacity:.9;
 }
 
 #countdown{
-font-size:2rem;
-margin-top:20px;
-font-weight:bold;
+font-size:1.8rem;
+font-weight:700;
+color:#27496D;
+margin-top:25px;
 }
 
 .star{
