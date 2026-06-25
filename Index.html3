@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Small Corner Of The Internet</title>
+  
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Trebuchet MS',sans-serif;
+}
+  
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script>
+window.onload = () => {
+
+confetti({
+particleCount: 180,
+spread: 120,
+origin: { y: 0.6 }
+});
+
+};
+</script>
+  
+body{
+background:linear-gradient(
+180deg,
+#F8FBFF 0%,
+#EEF5FF 40%,
+#FFF8F0 100%
+);
+color:#4F5A52;
+overflow-x:hidden;
+}
+
+.section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px;
+text-align:center;
+}
+
+.hero{
+background:linear-gradient(
+180deg,
+#F8FBFF,
+#EEF5FF,
+#FFF8F0
+);
+}
+  
+h1{
+font-size:2.4rem;
+margin-bottom:15px;
+}
+
+h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+
+h2{
+font-size:2rem;
+margin-bottom:15px;
+}
+  
+h2{
+font-size:1.6rem;
+}
+
+p{
+max-width:900px;
+line-height:1.6;
+font-size:0.95rem;
+}
+  
+.card{
+background:white;
+padding:30px;
+margin:15px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+width:min(650px,90%);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+margin-top:25px;
+padding:15px 30px;
+border:none;
+border-radius:30px;
+
+background:linear-gradient(
+135deg,
+#1E3A5F,
+#27496D
+);
+
+color:white;
+font-size:1rem;
+font-weight:600;
+cursor:pointer;
+
+box-shadow:0 4px 15px rgba(30,58,95,0.25);
+}
+
+.btn:hover{
+opacity:.9;
+}
+
+#countdown{
+font-size:1.8rem;
+font-weight:700;
+color:#27496D;
+margin-top:25px;
+}
+
+.star{
+position:fixed;
+width:4px;
+height:4px;
+background:#A8B8A0;
+border-radius:50%;
+animation:float 8s linear infinite;
+opacity:.6;
+}
+
+@keyframes float{
+from{
+transform:translateY(100vh);
+}
+to{
+transform:translateY(-100px);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero section">
+  
+
+<h1>⚠️ Official Notice</h1>
+
+<p>
+A very important human is about to get older.
+After careful observation, investigation,
+and way too many conversations...
+we are ready to celebrate him.
+</p>
+
+<div id="countdown"></div>
+
+<button class="btn"
+onclick="document.getElementById('page2').scrollIntoView({behavior:'smooth'})">
+Begin Investigation 🔍
+</button>
+
+</div>
+
+<div class="section" id="page2">
+
+<h2>Archive 🌿</h2>
+
+<div class="card" style="
+width:min(700px,92%);
+max-width:700px;
+">
+<h3>Piku</h3>
+<p>
+Future Business Owner 💼<br>
+Family Person 🤍<br>
+Professional Voice Note Sender 🎙️<br>
+Certified Hagguri Teaser 🐻<br>
+Status: Existing Peacefully
+</p>
+</div>
+
+  <div class="section">
+
+<h2>Official Records 📜</h2>
+
+<div class="card">
+
+Official Birthday:
+  ✨20✨
+
+<br><br>
+
+Actual Birthday Celebration:
+  ✨22✨
+  (budhapa aa gaya hai 2004 born)
+
+<br><br>
+
+Case Number:
+PKU-2026-01
+
+<br><br>
+
+Current Status:
+Successfully Survived Another Year
+
+</div>
+
+  </div>
+
+<div class="section">
+
+<h2>If Someone Asked Me About You 🌿</h2>
+
+<div class="card" style="max-width:800px;width:90%;">
+
+<p>
+
+I'd probably start with the wrong things.
+
+I'd say you're funny.
+
+I'd say you're caring.
+
+I'd say you somehow always have an opinion about everything.
+
+And technically all of those things would be true.
+
+<br><br>
+
+But if I had to describe you properly...
+
+I'd say you're the kind of person who quietly shows up.
+
+The kind of person who sends a voice note instead of disappearing.
+
+The kind of person who can spend five minutes talking nonsense and somehow still make someone feel better.
+
+<br><br>
+
+You're serious about the things that matter.
+
+Ridiculous about the things that don't.
+
+And somehow that combination works.
+
+<br><br>
+
+Which is honestly unfair.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2> Starter Pack 😭</h2>
+
+<div class="card">
+✔ Business Ideas<br><br>
+✔ Random Humor<br><br>
+✔ Good Advice<br><br>
+✔ Emotional Support<br><br>
+✔ Mysterious Creature
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="card">
+
+2027 ➜ Still exchanging random voice notes 🎙️
+
+<br><br>
+
+2028 ➜ ye haguri ab tak bula rahe hoge ya...
+
+<br><br>
+
+2030 ➜ Official Business Owner 💼
+
+<br><br>
+
+2035 ➜ Pretending to be serious while being absolutely unserious😪
+
+<br><br>
+
+2040 ➜ Still denying ur adorable 🤍
+
+</div>
+
+<div class="section">
+
+<h2>One Thing I've Noticed 🤍</h2>
+
+<div class="card" style="max-width:700px;width:90%;">
+
+<p>
+
+Whenever you're free, you send voice notes,
+random updates,
+and somehow manage to appear at exactly the right moment.
+
+But when your family is around,
+you disappear a little.
+
+Not because you don't care.
+
+Just because you know how to be present with the people who matter.
+
+And I think that's one of my favourite things about you.
+
+You never make being responsible look boring.
+
+</p>
+
+</div>
+
+</div>
+  
+<div class="section">
+
+<h2>Moments Worth Saving 📸</h2>
+
+<div class="cards">
+
+<div class="card" style="position:relative;">
+<img src="photo1.jpg" width="100%">
+<p>
+Reviewed multiple times. still adorable.
+  wese dulhan tum ban jao dulha main ban jaati hun. height main kya hai thodi 19-20 ka toh farak hai😼
+</p>
+</div>
+
+<div class="card" style="position:relative;">
+<img src="photo2.jpg" width="100%">
+<p>
+why do you look innocent?! I disagree!
+  and the side eye? damnnnnn you still look hot from every angle I've yet witnessed.
+</p>
+</div>
+
+<div class="card" style="position:relative;">
+<img src="photo3.jpg" width="100%">
+<p>
+uk u have a professional skill; which is taadna deep into my soul.
+  questionable; you are cute but merry's cuter.
+</p>
+</div>
+
+</div>
+
+  <div class="section">
+
+<h2>Things That Make Me Think Of You 🌿</h2>
+
+<div class="cards">
+
+<div class="card">
+🐝 Flying insects
+
+<p>
+I don't know why.
+I don't know how.
+But every time I see a flying insect now,
+I immediately think:
+"Yep. Piku would not approve."
+</p>
+
+</div>
+
+<div class="card">
+🎙️ Random Voice Notes
+
+<p>
+Sometimes helpful.
+Sometimes funny.
+Sometimes completely unnecessary.
+
+Yet somehow,
+I always end up listening to them.
+</p>
+
+</div>
+
+<div class="card">
+😂 Questionable Stickers
+
+<p>
+Half the conversations could probably be
+explained through stickers alone.
+
+The court is still reviewing the evidence.
+</p>
+
+</div>
+
+  </div>
+
+  <div class="section">
+
+<h2>nickname Files 🐻</h2>
+
+<div class="card" style="max-width:700px;width:90%;">
+
+<p>
+
+Somewhere along the way,
+I stopped being Astha.
+
+And became Hagguri.
+
+Nobody knows exactly when.
+
+Nobody knows exactly why.
+
+But apparently that is my official title now.
+
+I did not approve this decision.
+
+I was not consulted.
+
+Yet here we are.
+
+</p>
+
+</div>
+
+  </div>
+
+<div class="section">
+
+<h2>Favourite Discovery 🤍</h2>
+
+<div class="card" style="max-width:800px;width:90%;">
+
+<p>
+
+While making this website, I realised something strange.
+
+<br><br>
+
+I don't actually know you that well.
+
+<br><br>
+
+I don't know your comfort food.
+
+I don't know which ride you'd run toward first at a fair.
+
+I don't know which bench you'd choose in a park.
+
+I don't know which store you'd walk into before all the others.
+
+<br><br>
+
+I don't know whether you text people immediately after waking up or only after you've fully started your day.
+
+I don't even know when you fall asleep half the time, even though I've definitely waited around trying to figure it out.
+
+<br><br>
+
+And somehow, that became the hardest part of making this.
+
+<br><br>
+
+Not because I'm upset about any of it.
+
+Not because I think I should already know.
+
+<br><br>
+
+But because I wanted to make something special for you, and I kept realising how many blank spaces still exist.
+
+<br><br>
+
+There are no years of memories here.
+
+No old photographs.
+
+No ridiculous stories we've been telling for ages.
+
+No shared moment that instantly makes us laugh the second it's mentioned.
+
+<br><br>
+
+Just a collection of small things I've learned about you so far.
+
+<br><br>
+
+And maybe that's what this really is.
+
+Not a record of everything I know about you.
+
+Just proof that I'm still curious to learn the rest.
+
+<br><br>
+
+I know people aren't meant to be understood all at once.
+
+The best things usually take time.
+
+<br><br>
+
+Still, somewhere between building this page and rewriting it for the hundredth time, I realised that this is only the beginning of the story.
+
+<br><br>
+
+And strangely enough, that thought scares me a little.
+
+But it also makes me smile.
+
+</p>
+
+</div>
+
+</div>
+  
+<div class="section">
+
+<h2>Final Message❤️</h2>
+
+<p>
+I don't know what next year looks like.
+I don't know where life will take us.
+But today exists.
+And today,
+I wanted to celebrate you.
+  
+Unfortunately, I couldn't wrap this website in gift paper.
+
+I couldn't put it in a box.
+
+And I definitely couldn't hide it behind a giant birthday ribbon.
+
+So this is what you get instead.
+
+A small corner of the internet made just for you.
+
+And one day, if you need another one...
+
+A happier one, a funnier one, a more chaotic one, or just one made for absolutely no reason at all...
+
+You already know a Hagguri who can make websites now.
+
+Thank you for all the voice notes, random conversations, questionable stickers, unsolicited life lessons, and for somehow showing up at exactly the right moments.
+
+And thank you for being part of the story so far. 🤍
+<br><br>
+Happy Birthday, swayam ji 🌿
+</p>
+
+</div>
+
+<script>
+
+const birthday = new Date("June 26, 2026 00:00:00").getTime();
+
+setInterval(function(){
+
+const now = new Date().getTime();
+
+const distance = birthday - now;
+
+const days = Math.floor(distance/(1000*60*60*24));
+const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+const seconds = Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("countdown").innerHTML=
+days+"d "+hours+"h "+minutes+"m "+seconds+"s";
+
+},1000);
+
+
+for(let i=0;i<40;i++){
+
+let star=document.createElement("div");
+
+star.classList.add("star");
+
+star.style.left=Math.random()*100+"vw";
+
+star.style.animationDuration=
+(5+Math.random()*8)+"s";
+
+document.body.appendChild(star);
+
+}
+
+</script>
+
+</body>
+  </html>
