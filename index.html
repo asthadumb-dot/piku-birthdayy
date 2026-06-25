@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Piku Birthday Project</title>
+<title>A Small Corner Of The Internet</title>
   
 <style>
 *{
@@ -12,7 +12,21 @@ padding:0;
 box-sizing:border-box;
 font-family:'Trebuchet MS',sans-serif;
 }
+  
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
+<script>
+window.onload = () => {
+
+confetti({
+particleCount: 180,
+spread: 120,
+origin: { y: 0.6 }
+});
+
+};
+</script>
+  
 body{
 background:linear-gradient(
 180deg,
@@ -529,7 +543,7 @@ But it also makes me smile.
   
 <div class="section">
 
-<h2>Final Message ❤️</h2>
+<h2>Final Message❤️</h2>
   <img src="teddy.png" class="sticker teddy">
 
 <p>
